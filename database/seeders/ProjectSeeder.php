@@ -13,7 +13,7 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        $projects = Project::factory(10)->create();
+        $projects = Project::factory(15)->create();
 
         foreach ($projects as $project) {
             $project->users()->attach([

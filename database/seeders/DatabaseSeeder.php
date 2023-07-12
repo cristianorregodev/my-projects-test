@@ -47,6 +47,6 @@ class DatabaseSeeder extends Seeder
             'remember_token' => Str::random(10),
         ])->assignRole('ADMIN');
         $this->call(ProjectSeeder::class);
-        Task::factory(10)->create();
+        Task::factory(30)->create();
     }
 }
